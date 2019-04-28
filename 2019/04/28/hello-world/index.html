@@ -1,19 +1,285 @@
-extends partial/layout.pug
 
-block site_title
-    != page.title + " · " + config.title
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<!DOCTYPE html>
+<html lang>
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content>
+    <title>Hexo</title>
 
-block container
-    include mixins/post.pug
-    +post(page)
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#x673A;&amp;#x5173;&amp;#x4E00;&amp;#x652F;&amp;#x90E8;1-4&amp;#x6708;&amp;#x5B66;&amp;#x4E60;&amp;#x4EFB;&amp;#x52A1;&amp;#x548C;&amp;#x652F;&amp;#x90E8;&amp;#x5DE5;&amp;#x4F5C; &amp;#x5B66;&amp;#x4E60;&amp;#x4EFB;&amp;#x52A1;&amp;#x6307;&amp;#x5B9A;&amp;#x5B66;&amp;#x4E60;&amp;#x5185;&amp;#x5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/04/28/hello-world/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="&amp;#x673A;&amp;#x5173;&amp;#x4E00;&amp;#x652F;&amp;#x90E8;1-4&amp;#x6708;&amp;#x5B66;&amp;#x4E60;&amp;#x4EFB;&amp;#x52A1;&amp;#x548C;&amp;#x652F;&amp;#x90E8;&amp;#x5DE5;&amp;#x4F5C; &amp;#x5B66;&amp;#x4E60;&amp;#x4EFB;&amp;#x52A1;&amp;#x6307;&amp;#x5B9A;&amp;#x5B66;&amp;#x4E60;&amp;#x5185;&amp;#x5">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-28T12:56:16.048Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="&amp;#x673A;&amp;#x5173;&amp;#x4E00;&amp;#x652F;&amp;#x90E8;1-4&amp;#x6708;&amp;#x5B66;&amp;#x4E60;&amp;#x4EFB;&amp;#x52A1;&amp;#x548C;&amp;#x652F;&amp;#x90E8;&amp;#x5DE5;&amp;#x4F5C; &amp;#x5B66;&amp;#x4E60;&amp;#x4EFB;&amp;#x52A1;&amp;#x6307;&amp;#x5B9A;&amp;#x5B66;&amp;#x4E60;&amp;#x5185;&amp;#x5">
 
-block pagination
-    include mixins/paginator.pug
-    +post()
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
 
-block copyright
-    include partial/copyright.pug
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item">
+        <i class="home icon"></i>
+        HOME
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-hello-world" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <h1 id="&#x673A;&#x5173;&#x4E00;&#x652F;&#x90E8;1-4&#x6708;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x548C;&#x652F;&#x90E8;&#x5DE5;&#x4F5C;"><a href="#&#x673A;&#x5173;&#x4E00;&#x652F;&#x90E8;1-4&#x6708;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x548C;&#x652F;&#x90E8;&#x5DE5;&#x4F5C;" class="headerlink" title="&#x673A;&#x5173;&#x4E00;&#x652F;&#x90E8;1-4&#x6708;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x548C;&#x652F;&#x90E8;&#x5DE5;&#x4F5C;"></a>&#x673A;&#x5173;&#x4E00;&#x652F;&#x90E8;1-4&#x6708;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x548C;&#x652F;&#x90E8;&#x5DE5;&#x4F5C;</h1><hr>
+<h1 id="&#x5B66;&#x4E60;&#x4EFB;&#x52A1;"><a href="#&#x5B66;&#x4E60;&#x4EFB;&#x52A1;" class="headerlink" title="&#x5B66;&#x4E60;&#x4EFB;&#x52A1;"></a>&#x5B66;&#x4E60;&#x4EFB;&#x52A1;</h1><h2 id="&#x6307;&#x5B9A;&#x5B66;&#x4E60;&#x5185;&#x5BB9;"><a href="#&#x6307;&#x5B9A;&#x5B66;&#x4E60;&#x5185;&#x5BB9;" class="headerlink" title="&#x6307;&#x5B9A;&#x5B66;&#x4E60;&#x5185;&#x5BB9;"></a>&#x6307;&#x5B9A;&#x5B66;&#x4E60;&#x5185;&#x5BB9;</h2><blockquote>
+<ul class="ui list">
+<li><a href="https://baijiahao.baidu.com/s?id=1623220604415180476" target="_blank" rel="noopener">&#x4E2D;&#x56FD;&#x5171;&#x4EA7;&#x515A;&#x5C71;&#x897F;&#x7701;&#x7B2C;&#x5341;&#x4E00;&#x5C4A;&#x7EAA;&#x5F8B;&#x68C0;&#x67E5;&#x59D4;&#x5458;&#x4F1A;&#x7B2C;&#x56DB;&#x6B21;&#x5168;&#x4F53;&#x4F1A;&#x8BAE;&#x7CBE;&#x795E;</a></li>
+<li><a href="https://www.sohu.com/a/287865930_120066528" target="_blank" rel="noopener">&#x4E2D;&#x56FD;&#x5171;&#x4EA7;&#x515A;&#x5C71;&#x897F;&#x7701;&#x59D4;&#x5341;&#x4E00;&#x5C4A;&#x4E03;&#x6B21;&#x5168;&#x4F53;&#x4F1A;&#x8BAE;&#x7CBE;&#x795E;</a></li>
+<li><a href="http://www.sx.xinhuanet.com/2019-01/11/c_1123974463.htm" target="_blank" rel="noopener">&#x4E2D;&#x56FD;&#x5171;&#x4EA7;&#x515A;&#x5C71;&#x897F;&#x7701;&#x59D4;&#x7ECF;&#x6D4E;&#x5DE5;&#x4F5C;&#x4F1A;&#x8BAE;&#x7CBE;&#x795E;</a></li>
+<li><a href="http://www.xinhuanet.com/2018-12/18/c_1123872025.htm" target="_blank" rel="noopener">&#x4E60;&#x8FD1;&#x5E73;&#x603B;&#x4E66;&#x8BB0;&#x5728;&#x5E86;&#x795D;&#x6539;&#x9769;&#x5F00;&#x653E;40&#x5468;&#x5E74;&#x5927;&#x4F1A;&#x4E0A;&#x7684;&#x91CD;&#x8981;&#x8BB2;&#x8BDD;&#x548C;&#x89C6;&#x5BDF;&#x5C71;&#x897F;&#x91CD;&#x8981;&#x8BB2;&#x8BDD;&#x7CBE;&#x795E;</a></li>
+<li>&#x5C40;&#x515A;&#x59D4;&#x4E66;&#x8BB0;&#x3001;&#x5C40;&#x957F;&#x5F6D;&#x4E1C;&#x6653;&#x540C;&#x5FD7;&#x5728;&#x5168;&#x5C40;&#x201C;&#x6539;&#x9769;&#x521B;&#x65B0;&#x3001;&#x594B;&#x53D1;&#x6709;&#x4E3A;&#x201D;&#x5927;&#x8BA8;&#x8BBA;&#x52A8;&#x5458;&#x90E8;&#x7F72;&#x5927;&#x4F1A;&#x4E0A;&#x7684;&#x8BB2;&#x8BDD;&#x7CBE;&#x795E;&#xFF08;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x89C1;&#x5FAE;&#x4FE1;&#xFF09;</li>
+<li>&#x5C40;&#x515A;&#x59D4;&#x4E66;&#x8BB0;&#x3001;&#x5C40;&#x957F;&#x5F6D;&#x4E1C;&#x6653;&#x540C;&#x5FD7;&#x5728;&#x5168;&#x5C40;&#x5BF9;&#x6807;&#x4E00;&#x6D41;&#x8FF0;&#x804C;&#x8BC4;&#x8BAE;&#x4F1A;&#x4E0A;&#x7684;&#x8BB2;&#x8BDD;&#xFF08;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x89C1;&#x5FAE;&#x4FE1;&#xFF09;</li>
+<li>&#x7269;&#x5316;&#x9662;&#x5173;&#x4E8E;&#x6539;&#x9769;&#x521B;&#x65B0;&#x3001;&#x594B;&#x53D1;&#x6709;&#x4E3A;&#x5927;&#x8BA8;&#x8BBA;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x6848;&#xFF08;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x89C1;&#x5FAE;&#x4FE1;&#xFF09;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="&#x652F;&#x90E8;&#x5DE5;&#x4F5C;"><a href="#&#x652F;&#x90E8;&#x5DE5;&#x4F5C;" class="headerlink" title="&#x652F;&#x90E8;&#x5DE5;&#x4F5C;"></a>&#x652F;&#x90E8;&#x5DE5;&#x4F5C;</h1><h3 id="1-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"><a href="#1-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;" class="headerlink" title="1.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"></a>1.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;1&#x6708;7&#x65E5;&#xFF1B;<br>&#x4E3B;&#x9898;&#xFF1A;&#x5B89;&#x6392;&#x4E2D;&#x5C42;&#x5E72;&#x90E8;&#x8003;&#x6838;&#x4E8B;&#x5B9C;<br>&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF1A;&#x4F20;&#x8FBE;&#x300A;&#x5173;&#x4E8E;&#x5F00;&#x5C55;2018&#x5E74;&#x5EA6;&#x4E2D;&#x5C42;&#x5E72;&#x90E8;&#x8003;&#x6838;&#x5DE5;&#x4F5C;&#x7684;&#x901A;&#x77E5;&#x300B;&#x53CA;&#x76F8;&#x5173;&#x5DE5;&#x4F5C;&#x5206;&#x5DE5;</p>
+<h3 id="2-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"><a href="#2-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;" class="headerlink" title="2.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"></a>2.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;1&#x6708;31&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x515A;&#x5458;&#x5B66;&#x4E60;&#x65E5;<br>&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF1A;&#x96C6;&#x4E2D;&#x5B66;&#x4E60;&#x7701;&#x7EAA;&#x59D4;&#x5341;&#x4E00;&#x5C4A;&#x56DB;&#x6B21;&#x5168;&#x4F1A;&#x7CBE;&#x795E;<br>&#xFF08;&#x5177;&#x4F53;&#x8D44;&#x6599;&#xFF1A;<a href="https://baijiahao.baidu.com/s?id=1623220604415180476" target="_blank" rel="noopener">&#x4E2D;&#x56FD;&#x5171;&#x4EA7;&#x515A;&#x5C71;&#x897F;&#x7701;&#x7B2C;&#x5341;&#x4E00;&#x5C4A;&#x7EAA;&#x5F8B;&#x68C0;&#x67E5;&#x59D4;&#x5458;&#x4F1A;&#x7B2C;&#x56DB;&#x6B21;&#x5168;&#x4F53;&#x4F1A;&#x8BAE;&#x7CBE;&#x795E;</a>)</p>
+<h3 id="3-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"><a href="#3-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;" class="headerlink" title="3.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"></a>3.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;2&#x6708;20&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x786E;&#x5B9A;&#x652F;&#x59D4;&#x5019;&#x9009;&#x4EBA;&#x9884;&#x5907;&#x4EBA;&#x9009;&#x540D;&#x5355;</p>
+<h3 id="4-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"><a href="#4-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;" class="headerlink" title="4.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"></a>4.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;2&#x6708;27&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x786E;&#x5B9A;&#x652F;&#x59D4;&#x5019;&#x9009;&#x4EBA;&#x540D;&#x5355;<br>&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF1A;</p>
+<blockquote>
+<ul class="ui list">
+<li>&#x5BA3;&#x8BFB;&#x300A;&#x5173;&#x4E8E;&#x540C;&#x610F;&#x7269;&#x5316;&#x9662;&#x673A;&#x5173;&#x7B2C;&#x4E00;&#x652F;&#x90E8;&#x59D4;&#x5458;&#x4F1A;&#x59D4;&#x5458;&#x5019;&#x9009;&#x4EBA;&#x9884;&#x5907;&#x4EBA;&#x9009;&#x7684;&#x6279;&#x590D;&#x300B;&#xFF1B;</li>
+<li>&#x8BF4;&#x660E;&#x5019;&#x9009;&#x4EBA;&#x8003;&#x5BDF;&#x60C5;&#x51B5;&#xFF1B;</li>
+<li>&#x786E;&#x5B9A;&#x652F;&#x59D4;&#x5019;&#x9009;&#x4EBA;&#x540D;&#x5355;&#x3002;</li>
+</ul>
+</blockquote>
+<h3 id="5-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"><a href="#5-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;" class="headerlink" title="5.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"></a>5.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;2&#x6708;28&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x515A;&#x5458;&#x5B66;&#x4E60;&#x65E5;<br>&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF1A;&#x96C6;&#x4E2D;&#x5B66;&#x4E60;</p>
+<blockquote>
+<ul class="ui list">
+<li><a href="https://www.sohu.com/a/287865930_120066528" target="_blank" rel="noopener">&#x5C71;&#x897F;&#x7701;&#x59D4;&#x5341;&#x4E00;&#x5C4A;&#x4E03;&#x6B21;&#x5168;&#x4F53;&#x4F1A;&#x8BAE;&#x7CBE;&#x795E;</a>&#xFF1B;</li>
+<li><a href="http://www.sx.xinhuanet.com/2019-01/11/c_1123974463.htm" target="_blank" rel="noopener">&#x5C71;&#x897F;&#x7701;&#x59D4;&#x7ECF;&#x6D4E;&#x5DE5;&#x4F5C;&#x4F1A;&#x8BAE;&#x7CBE;&#x795E;</a>&#xFF1B;</li>
+<li><a href="http://www.xinhuanet.com/2018-12/18/c_1123872025.htm" target="_blank" rel="noopener">&#x4E60;&#x8FD1;&#x5E73;&#x603B;&#x4E66;&#x8BB0;&#x5728;&#x5E86;&#x795D;&#x6539;&#x9769;&#x5F00;&#x653E;40&#x5468;&#x5E74;&#x5927;&#x4F1A;&#x4E0A;&#x7684;&#x91CD;&#x8981;&#x8BB2;&#x8BDD;&#x548C;&#x89C6;&#x5BDF;&#x5C71;&#x897F;&#x91CD;&#x8981;&#x8BB2;&#x8BDD;&#x7CBE;&#x795E;</a></li>
+</ul>
+</blockquote>
+<h3 id="6-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"><a href="#6-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;" class="headerlink" title="6.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"></a>6.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;3&#x6708;5&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x9009;&#x4E3E;&#x4EA7;&#x751F;&#x65B0;&#x4E00;&#x5C4A;&#x652F;&#x59D4;&#x59D4;&#x5458;&#xFF08;&#x6362;&#x5C4A;&#x9009;&#x4E3E;&#x5927;&#x4F1A;&#xFF09;</p>
+<h3 id="7-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"><a href="#7-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;" class="headerlink" title="7.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"></a>7.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;3&#x6708;5&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x786E;&#x5B9A;&#x652F;&#x59D4;&#x5206;&#x5DE5;</p>
+<h3 id="8-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"><a href="#8-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;" class="headerlink" title="8.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"></a>8.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;3&#x6708;15&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x201C;&#x6539;&#x9769;&#x521B;&#x65B0; &#x594B;&#x53D1;&#x6709;&#x4E3A;&#x201D;&#x5927;&#x8BA8;&#x8BBA;&#x4E3B;&#x9898;&#x515A;&#x65E5;&#x6D3B;&#x52A8;<br>&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF1A;</p>
+<blockquote>
+<ul class="ui list">
+<li>&#x96C6;&#x4E2D;&#x5B66;&#x4E60;&#xFF1A;&#x4F20;&#x8FBE;&#x5C40;&#x515A;&#x59D4;&#x4E66;&#x8BB0;&#x3001;&#x5C40;&#x957F;&#x5F6D;&#x4E1C;&#x6653;&#x540C;&#x5FD7;&#x5728;&#x5168;&#x5C40;&#x201C;&#x6539;&#x9769;&#x521B;&#x65B0;&#x3001;&#x594B;&#x53D1;&#x6709;&#x4E3A;&#x201D;&#x5927;&#x8BA8;&#x8BBA;&#x52A8;&#x5458;&#x90E8;&#x7F72;&#x5927;&#x4F1A;&#x4E0A;&#x7684;&#x8BB2;&#x8BDD;&#x7CBE;&#x795E;&#xFF1B;&#x4F20;&#x8FBE;&#x7269;&#x5316;&#x9662;&#x5173;&#x4E8E;&#x6539;&#x9769;&#x521B;&#x65B0;&#x3001;&#x594B;&#x53D1;&#x6709;&#x4E3A;&#x5927;&#x8BA8;&#x8BBA;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x6848;&#xFF1B;&#x4E60;&#x8FD1;&#x5E73;&#x603B;&#x4E66;&#x8BB0;&#x5728;&#x5E86;&#x795D;&#x6539;&#x9769;&#x5F00;&#x653E;40&#x5468;&#x5E74;&#x5927;&#x4F1A;&#x4E0A;&#x7684;&#x91CD;&#x8981;&#x8BB2;&#x8BDD;&#x548C;&#x89C6;&#x5BDF;&#x5C71;&#x897F;&#x91CD;&#x8981;&#x8BB2;&#x8BDD;&#x7CBE;&#x795E;&#x3002;</li>
+<li>&#x5F00;&#x5C55;&#x201C;&#x6211;&#x4E3A;&#x6539;&#x9769;&#x521B;&#x65B0;&#x505A;&#x4EC0;&#x4E48;&#x201D;&#x5927;&#x5BB6;&#x8C08;&#x6D3B;&#x52A8;</li>
+<li>&#x5F00;&#x5C55;&#x201C;&#x6539;&#x9769;&#x521B;&#x65B0; &#x594B;&#x53D1;&#x6709;&#x4E3A;&#x201D;&#x610F;&#x89C1;&#x5F81;&#x96C6;&#x6D3B;&#x52A8;</li>
+<li>&#x89C2;&#x770B;&#x201C;&#x6539;&#x9769;&#x5F00;&#x653E;&#x518D;&#x51FA;&#x53D1;&#x201D;&#x5927;&#x8BA8;&#x8BBA;&#x7279;&#x522B;&#x8282;&#x76EE;</li>
+</ul>
+</blockquote>
+<h3 id="9-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"><a href="#9-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;" class="headerlink" title="9.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"></a>9.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;3&#x6708;28&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x4E13;&#x9898;&#x7EC4;&#x7EC7;&#x751F;&#x6D3B;&#x4F1A;&#xFF08;&#x6279;&#x8BC4;&#x4E0E;&#x81EA;&#x6211;&#x6279;&#x8BC4;&#xFF09;</p>
+<h3 id="10-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"><a href="#10-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;" class="headerlink" title="10.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;"></a>10.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x59D4;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;4&#x6708;19&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x63A8;&#x8350;&#x4F18;&#x79C0;&#x9752;&#x5E74;&#x5FD7;&#x613F;&#x8005;</p>
+<h3 id="11-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"><a href="#11-&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;" class="headerlink" title="11.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;"></a>11.&#x4F1A;&#x8BAE;&#x540D;&#x79F0;&#xFF1A;&#x652F;&#x90E8;&#x515A;&#x5458;&#x5927;&#x4F1A;</h3><p>&#x65F6;&#x95F4;&#xFF1A;4&#x6708;28&#x65E5;<br>&#x4E3B;&#x9898;&#xFF1A;&#x201C;&#x6539;&#x9769;&#x521B;&#x65B0;&#xFF0C;&#x594B;&#x53D1;&#x6709;&#x4E3A;&#x201D;&#x5927;&#x8BA8;&#x8BBA;&#x603B;&#x7ED3;&#x4EA4;&#x6D41;<br>&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#xFF1A;</p>
+<blockquote>
+<ul class="ui list">
+<li>&#x91CD;&#x6E29;&#x515A;&#x59D4;&#x4E66;&#x8BB0;&#x3001;&#x5C40;&#x957F;&#x5F6D;&#x4E1C;&#x6653;&#x5173;&#x4E8E;&#x5927;&#x8BA8;&#x8BBA;&#x7684;&#x7CFB;&#x5217;&#x91CD;&#x8981;&#x8BB2;&#x8BDD;&#x7CBE;&#x795E;</li>
+<li>&#x515A;&#x652F;&#x90E8;&#x4E66;&#x8BB0;&#x91CD;&#x70B9;&#x5C31;&#x5927;&#x8BA8;&#x8BBA;6&#x4E2A;&#x73AF;&#x8282;&#xFF08;&#x52A8;&#x5458;&#x5B89;&#x6392;&#x3001;&#x5B66;&#x4E60;&#x7814;&#x8BA8;&#x3001;&#x652F;&#x90E8;&#x7EC4;&#x7EC7;&#x751F;&#x6D3B;&#x4F1A;&#x3001;&#x542C;&#x5148;&#x8FDB;&#x5178;&#x578B;&#x62A5;&#x544A;&#x3001;&#x7ACB;&#x8DB3;&#x5C97;&#x4F4D;&#x505A;&#x8D21;&#x732E;&#x3001;&#x652F;&#x90E8;&#x8303;&#x56F4;&#x5C0F;&#x7ED3;&#xFF09;&#x4E2D;&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x56F4;&#x7ED5;&#x6D3B;&#x52A8;&#x5F00;&#x5C55;&#x7684;&#x60C5;&#x51B5;&#x548C;&#x6548;&#x679C;&#x8FDB;&#x884C;&#x603B;&#x7ED3;</li>
+<li>&#x6BCF;&#x4F4D;&#x515A;&#x5458;&#x540C;&#x5FD7;&#x4EE5;&#x5927;&#x8BA8;&#x8BBA;&#x6D3B;&#x52A8;&#x4E3A;&#x5951;&#x673A;&#x3001;&#x5B9E;&#x73B0;&#x81EA;&#x6211;&#x63D0;&#x5347;&#x4E3A;&#x4E3B;&#x9898;&#xFF0C;&#x7ED3;&#x5408;&#x5DE5;&#x4F5C;&#x5C97;&#x4F4D;&#x548C;&#x5DE5;&#x4F5C;&#x804C;&#x8D23;&#x4F5C;&#x4EA4;&#x6D41;&#x53D1;&#x8A00;</li>
+</ul>
+</blockquote>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2019-04-28T12:44:21.235Z" itemprop="datePublished">2019-04-28</time>
+
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>Previous</a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a class="ui tiny button disabled">Next<i class="angle right icon"></i></a>
+
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#机关一支部1-4月学习任务和支部工作"><span>机关一支部1-4月学习任务和支部工作</span></a></li><li><a href="#学习任务"><span>学习任务</span></a><ol><li><a href="#指定学习内容"><span>指定学习内容</span></a></li></ol></li><li><a href="#支部工作"><span>支部工作</span></a><ol><li><a href="#1-会议名称：支委会"><span>1.会议名称：支委会</span></a></li><li><a href="#2-会议名称：支部党员大会"><span>2.会议名称：支部党员大会</span></a></li><li><a href="#3-会议名称：支委会"><span>3.会议名称：支委会</span></a></li><li><a href="#4-会议名称：支部党员大会"><span>4.会议名称：支部党员大会</span></a></li><li><a href="#5-会议名称：支部党员大会"><span>5.会议名称：支部党员大会</span></a></li><li><a href="#6-会议名称：支部党员大会"><span>6.会议名称：支部党员大会</span></a></li><li><a href="#7-会议名称：支委会"><span>7.会议名称：支委会</span></a></li><li><a href="#8-会议名称：支部党员大会"><span>8.会议名称：支部党员大会</span></a></li><li><a href="#9-会议名称：支部党员大会"><span>9.会议名称：支部党员大会</span></a></li><li><a href="#10-会议名称：支委会"><span>10.会议名称：支委会</span></a></li><li><a href="#11-会议名称：支部党员大会"><span>11.会议名称：支部党员大会</span></a></li></ol></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2019 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>
